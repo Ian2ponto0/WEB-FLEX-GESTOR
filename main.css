@@ -1,0 +1,59 @@
+/* 
+#121212 cor de fundo (Quase preto)
+#1E1E1E secundaria (Cinza escuro)
+#9D00FF Destaque 1 (roxo)
+#FFC300 Destaque 2 (Dourado)
+#00BFFF Destaque 3 (Azul)
+#FF69B4 Destaque 4 (Rosa) 
+#bb2233 Destaque importante (Vermelho)
+*/
+
+  
+
+body {
+    font-family: "Cambria", serif;
+    background-color: #121212;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {    
+    font-family: "Cambria", serif;
+}
+
+div.login-container { 
+    font-family: "Cambria", serif;
+    border-radius: 50px;
+    display: flex; 
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-color: #1E1E1E;
+    display: flex;
+    width: 525px;
+    height: 400px; 
+    align-items: center;
+    color:rgba(255, 255, 255, 0.904)
+}
+
+.inputlogin {
+    border-radius: 100px;
+    background-color: #1E1E1E;
+    border-color: #9d00ffa2;
+    font-family: "Cambria", serif;
+    color: rgba(255, 255, 255, 0.466);
+    width: 250px;
+    height: 40px;
+}
+
+
+button.btnlog {
+    font-family: "Cambria", serif;
+    border-radius: 100px;
+    width: 350px;
+    height: 50px;
+}
