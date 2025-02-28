@@ -1,6 +1,6 @@
 						Seja Bem vindo ao nosso projeto!!!
 
-#Grupo: Ian Olveira de Almeida, Kauê Dos Santos Muniz, Sophia Souza Xavier, Gustavo Pereira de Almeida , Luiz Gustavo Marchetti, João Victor Carato.  
+#Grupo: Ian Oilveira de Almeida, Kauê Dos Santos Muniz, Sophia Souza Xavier, Gustavo Pereira de Almeida , Luiz Gustavo Marchetti, João Victor Carato.  
 
 #Sobre:
 
