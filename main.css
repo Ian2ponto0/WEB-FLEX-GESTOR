@@ -8,7 +8,21 @@
 #bb2233 Destaque importante (Vermelho)
 */
 
-  
+/* .contornodivinput{
+    position: absolute;
+    border-radius: 50px;
+    width: 280px;
+    height: 70px;
+    z-index: 2;
+    left: 25%;
+
+
+
+    border-color:#9d00ff17;
+    background-color: #9d00ff25;
+    font-family: "Cambria", serif;
+
+}*/
 
 body {
     font-family: "Cambria", serif;
@@ -20,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: flex;
 }
 
 div {    
@@ -27,33 +42,65 @@ div {
 }
 
 div.login-container { 
+    z-index: 1;
+    position: relative;
     font-family: "Cambria", serif;
     border-radius: 50px;
     display: flex; 
     flex-direction: column;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+
     background-color: #1E1E1E;
     display: flex;
     width: 525px;
     height: 400px; 
     align-items: center;
-    color:rgba(255, 255, 255, 0.904)
+
+    background-color: #1E1E1E;
+    color:rgba(255, 255, 255, 0.897);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
 .inputlogin {
     border-radius: 100px;
     background-color: #1E1E1E;
-    border-color: #9d00ffa2;
+    border-color: #9d00ff;
+
     font-family: "Cambria", serif;
     color: rgba(255, 255, 255, 0.466);
     width: 250px;
     height: 40px;
+    z-index: 3;
+    left: 25%;
+    position: absolute;
+
+
+    border-width: 3px;   
+    border-style: solid;
+    box-shadow: 0 0 5px #9d00ff,       
+                0 0 10px #9d00ff,
+                0 0 15px #9d00ff;  
+
 }
+
 
 
 button.btnlog {
     font-family: "Cambria", serif;
+
     border-radius: 100px;
     width: 350px;
     height: 50px;
+
+    border-color: black;
+
+
+    background-color: #1E1E1E;
+    border-width: 3px;
+    border-bottom: 2px solid #9d00ff;
+    border-right: 2px solid #9d00ff;
+    box-shadow: 0 5px 5px -5px #9d00ff,
+                 5px 0 5px -5px #9d00ff,
+                 0 10px 10px -10px #9d00ff,
+                 10px 0 10px -10px #9d00ff; 
+
 }

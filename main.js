@@ -1,31 +1,17 @@
 // --------------------------------------------Login:
 
 function removertexto() {
-    event.target.value = ""; 
+}
 
-    const a = document.querySelectorAll ("username");
-    const b = document.querySelectorAll("password");
-    while (a === "") {
-        a.forEach = "Usuário";
-        (a => {
-            a.value = ""; // 
-          });
-    };
-    while (b === "") {
-        b.forEach = "Senha";
-        (b => {
-            b.value = ""; 
-          });
-    };
-};
-
+function retornarterxto() {
+}
 
 
 
 document.getElementById("login-form").addEventListener ("submit", function(event){
     event.preventDefault();
 
-    var username = document.getElementById("username");
+    var username = document.getElementById("user name");
     var senha = document.getElementById ("password");
     
     if (username === "aa" && password === "aa") {

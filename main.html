@@ -24,13 +24,18 @@
         <div> 
         <form id="login-form"> </form>
         <!--<label  for="username"> Nome de usuário: </label> -->
-        <input type="text" id="username" name="username" class="inputlogin" Value = "    Usuário"  onclick="removertexto()" required> 
+        <input type="text" id="username" name="username" class="inputlogin" value = ""  placeholder="Usuário" onfocus="removertexto()" onblur="retornarterxto()" required> <div class = "contornodivinput"> </div>
         <br>
         </div>
         <br>
+        <br>
+        <br>
         <div>
         <!--<label for="password"> Senha: </label> -->
-        <input type="text" id="password" name="username" class="inputlogin" value="    Senha" onclick="removertexto()" required> 
+        <input type="password" id="password" name="password" class="inputlogin" value="" placeholder="Senha"  onfocus="removertexto()" onblur="retornarterxto()" required> <div class = "contornodivinput"> </div>
+        <br>
+        <br>
+        <br>
         <br>
     </div>
     <button type="submit" class="btnlog"> Entrar </button>
