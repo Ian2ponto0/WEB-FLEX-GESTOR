@@ -15,7 +15,6 @@ document.getElementById("login-form").addEventListener ("submit", function(event
     var senha = document.getElementById ("password");
     
     if (username === "aa" && password === "aa") {
-        alert ("Login Feito com eixo")
         alert ("Login Feito com exito")
 
     } else { 
