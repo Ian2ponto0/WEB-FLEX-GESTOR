@@ -37,6 +37,19 @@ body {
     z-index: flex;
 }
 
+.mostrarsenha {
+    position: absolute;
+    margin-left: -60;
+    margin-top: -90px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #9d00ff;
+
+
+}
+
 div {    
     font-family: "Cambria", serif;
 }
@@ -64,23 +77,20 @@ div.login-container {
     border-radius: 100px;
     background-color: #1E1E1E;
     border-color: #9d00ff;
-
     font-family: "Cambria", serif;
-    color: rgba(255, 255, 255, 0.466);
+    color: rgba(255, 255, 255, 0.8);
     width: 250px;
     height: 40px;
-    z-index: 3;
-    left: 25%;
-    position: absolute;
-
-
+    padding-right: 40px;
     border-width: 3px;   
     border-style: solid;
     box-shadow: 0 0 5px #9d00ff,       
                 0 0 10px #9d00ff,
-                0 0 15px #9d00ff;  
-
+                0 0 15px #9d00ff;
+    position: relative;
+    z-index: 2;
 }
+
 
 
 
@@ -103,4 +113,18 @@ button.btnlog {
                  0 10px 10px -10px #9d00ff,
                  10px 0 10px -10px #9d00ff; 
 
+}
+
+
+.mostrarsenha {
+    position: absolute;
+    margin-left: 253px;
+    margin-top: -63px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #9d00ff;
+    z-index: 3;
 }
