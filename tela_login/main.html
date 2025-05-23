@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <link rel="stylesheet" href="main.css">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestFlex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        #particles-js {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          background-color: #000000;
+          z-index: -1;
+          top: 0;
+          left: 0;
+        }
+      </style>
+</head>
+
+
+<body>
+    <div id="particles-js"></div>
+
+ <header> <!-- cabeçalho -->
+
+
+
+ </header>
+
+ <main> <!-- conteudo -->       
+    <div class="login-container"> <!-- Login -->
+        <h1> Login </h1>
+        <div> 
+        <form id="login-form"> </form>
+        <!--<label  for="username"> Nome de usuário: </label> -->
+        <input type="text" id="username" name="username" class="inputlogin" value = ""  placeholder="Usuário" onfocus="removertexto()" onblur="retornarterxto()" required> <div class = "contornodivinput"> </div>
+        <br>
+        </div>
+        <br>
+        <div>
+        <!--<label for="password"> Senha: </label> -->
+        <input type="password" id="password" name="password" class="inputlogin" value="" placeholder="Senha"  onfocus="removertexto()" onblur="retornarterxto()" required> <div class = "contornodivinput"> </div>
+        <br>
+        <br>
+        <button type="button" onclick="mostrarsenha()" class="mostrarsenha">👁️</button>
+    </div>
+    <button type="button" class="btnlog" onclick="window.location.href='telainicial.html'">Entrar</button>
+  </div>
+
+
+
+ </main>
+<footer> <!-- rodapé -->
+
+
+</footer>
+
+
+
+<script src="main.js"> </script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#a020f0"  // Roxo
+        },
+        "shape": {
+          "type": "circle"
+        },
+        "opacity": {
+          "value": 0.5
+        },
+        "size": {
+          "value": 3
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#a020f0",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          }
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 0.5
+            }
+          }
+        }
+      },
+      "retina_detect": true
+    });
+    </script>
+    
+</body>
+</html>

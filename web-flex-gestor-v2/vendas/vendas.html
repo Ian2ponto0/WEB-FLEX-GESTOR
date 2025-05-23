@@ -1,0 +1,63 @@
+<!-- vendas/vendas.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Vendas – Web Flex Gestor</title>
+  <link rel="stylesheet" href="../common/stylepadrao.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Web Flex Gestor</h2>
+    <ul>
+      <li><a href="../tela_inicial/telainicial.html">🏠 Dashboard</a></li>
+      <li><a href="../clientes/clientes.php">👥 Clientes</a></li>
+      <li><a href="../produtos/produtos.html">📦 Produtos</a></li>
+      <li><a href="vendas.html">🛒 Vendas</a></li>
+      <li><a href="../projetos/projetos.html">📂 Projetos</a></li>
+      <li><a href="../financeiro/financeiro.html">💰 Financeiro</a></li>
+      <li><a href="../funcionarios/funcionarios.html">👷 Funcionários</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <h1>🛒 Registrar Venda</h1>
+    <form id="form-venda">
+      <label>Data *</label>
+      <input type="datetime-local" id="dataVenda" required>
+      <label>Cliente</label>
+      <select id="clienteId"><option value="">Sem cliente</option></select>
+      <label>Adicionar Item</label>
+      <div style="display:flex;gap:5px;">
+        <input type="text" id="prodSearch" placeholder="Pesquisar produto">
+        <input type="number" id="qtdItem" value="1" min="1" style="width:60px;">
+        <button type="button" id="addItem">Adicionar</button>
+      </div>
+      <div id="results" style="margin-top:5px;"></div>
+      <h2>Itens</h2>
+      <table id="tbl-itens">
+        <thead><tr><th>Produto</th><th>Qtd</th><th>Unit.</th><th>Subtotal</th><th>🗑️</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <label>Total Bruto</label>
+      <input type="text" id="totalBruto" readonly>
+      <label>Descontos</label>
+      <input type="number" id="descontos" value="0" step="0.01">
+      <label>Total Líquido</label>
+      <input type="text" id="totalLiquido" readonly>
+      <label>Forma de Pagamento</label>
+      <input type="text" id="formaPagamento">
+      <label>Observações</label>
+      <textarea id="obs" rows="2"></textarea>
+      <button type="submit">Salvar Venda</button>
+    </form>
+    <h2>Lista de Vendas</h2>
+    <table id="tbl-vendas">
+      <thead>
+        <tr><th>Data</th><th>Cliente</th><th>Total</th><th>Detalhes</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script type="module" src="vendas.js"></script>
+</body>
+</html>

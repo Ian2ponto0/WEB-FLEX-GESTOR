@@ -1,0 +1,108 @@
+:root {
+  --bg-color: #121212;
+  --card-color: rgba(30,30,30,0.9);
+  --primary: #9D00FF;
+  --accent: #00BFFF;
+  --text: #FFFFFF;
+  --shadow: rgba(157,0,255,0.5);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #121212 0%, #1f1f1f 100%);
+  position: relative;
+}
+
+#particles-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+}
+
+.login-container {
+  background: var(--card-color);
+  border-radius: 15px;
+  box-shadow: 0 0 30px var(--shadow);
+  backdrop-filter: blur(5px);
+  padding: 40px;
+  width: 400px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(-20px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px var(--shadow);
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid var(--primary);
+  background: transparent;
+  color: var(--text);
+  font-size: 1em;
+  transition: border-color .3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+}
+
+.underline {
+  position: absolute;
+  left:0; bottom:0;
+  height:2px; width:0;
+  background:var(--accent);
+  transition:.4s;
+}
+
+.input-group input:focus ~ .underline {
+  width:100%;
+}
+
+#toggle-pass {
+  position:absolute; right:5px; top:10px;
+  background:none; border:none; color:var(--accent);
+  cursor:pointer; font-size:1em;
+}
+
+.btn-entrar {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border: none;
+  border-radius: 8px;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .3s ease, box-shadow .3s ease;
+  box-shadow:0 0 10px var(--shadow);
+}
+
+.btn-entrar:hover {
+  transform: translateY(-3px);
+  box-shadow:0 0 15px var(--shadow);
+}
