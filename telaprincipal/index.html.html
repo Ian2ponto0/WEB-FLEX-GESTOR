@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Web Flex Gestor</title>
+  <link rel="stylesheet" href="styleinicial.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Web Flex Gestor</h2>
+    <ul>
+      <li onclick="window.location.href='../tela_inicial/telainicial.html'">🏠 Dashboard</li>
+      <li onclick="window.location.href='../financeiro/financeiro.html'">💰 Financeiro</li>
+      <li onclick="window.location.href='../projetos/projetos.html'">📂 Projetos</li>
+      <li onclick="window.location.href='../funcionarios/funcionarios.html'">👷 Funcionários</li>
+      <li onclick="window.location.href='../vendas/vendas.html'">🛒 Vendas</a></li> </li>
+      <li onclick="window.location.href='../produtos/produtos.html'">📦 Produtos</li>
+      <li onclick="window.location.href='../clientes/clientes.html'">👥 Clientes</li>
+    </ul>
+  </div>
+  <div class="main">
+    <h1>📊 Painel Geral</h1>
+    <div class="widgets">
+      <div class="widget">Receita Total<br><strong>R$ 27.530,00</strong></div>
+      <div class="widget">Clientes Ativos<br><strong>124</strong></div>
+      <div class="widget">Produtos Cadastrados<br><strong>58</strong></div>
+      <div class="widget">Funcionários<br><strong>14</strong></div>
+    </div>
+    <div class="charts">
+      <div class="chart-box">
+        <h3>📈 Faturamento Mensal</h3>
+        <canvas id="graficoDashboard"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="scriptinicial.js"></script>
+</body>
+</html>
